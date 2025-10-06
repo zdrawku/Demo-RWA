@@ -10,31 +10,31 @@
     </div>
     <div class="row-layout group_3">
       <igx-input-group type="border" class="input">
-        <input type="text" placeholder="Copy From Previous Deal" igxInput />
+        <input type="text" [(ngModel)]="value" placeholder="Copy From Previous Deal" igxInput />
       </igx-input-group>
       <igx-input-group type="border" class="input">
-        <input type="text" placeholder="IMO" igxInput />
+        <input type="text" [(ngModel)]="value1" placeholder="IMO" igxInput />
       </igx-input-group>
       <igx-input-group type="border" class="input">
-        <input type="text" placeholder="Vessel" igxInput />
+        <input type="text" [(ngModel)]="value2" placeholder="Vessel" igxInput />
       </igx-input-group>
       <igx-input-group type="border" class="input">
-        <input type="text" placeholder="Customer" igxInput />
+        <input type="text" [(ngModel)]="value3" placeholder="Customer" igxInput />
       </igx-input-group>
       <igx-input-group type="border" class="input">
-        <input type="text" placeholder="Pay Terms" igxInput />
+        <input type="text" [(ngModel)]="value4" placeholder="Pay Terms" igxInput />
       </igx-input-group>
       <igx-input-group type="border" class="input">
-        <input type="text" placeholder="Min, Margins" igxInput />
+        <input type="text" [(ngModel)]="value5" placeholder="Min, Margins" igxInput />
       </igx-input-group>
       <igx-input-group type="border" class="input">
-        <input type="text" placeholder="Agent" igxInput />
+        <input type="text" [(ngModel)]="value6" placeholder="Agent" igxInput />
       </igx-input-group>
       <igx-input-group type="border" class="input">
-        <input type="text" placeholder="Brocker" igxInput />
+        <input type="text" [(ngModel)]="value7" placeholder="Brocker" igxInput />
       </igx-input-group>
       <igx-input-group type="border" class="input">
-        <input type="text" placeholder="buying Company" igxInput />
+        <input type="text" [(ngModel)]="value8" placeholder="buying Company" igxInput />
       </igx-input-group>
       <div class="row-layout group_4">
         <igx-checkbox labelPosition="after" class="checkbox">
@@ -59,8 +59,8 @@
           Port
         </h5>
       </div>
-      <button igxButton="raised" igxRipple class="button">
-        <igx-icon>
+      <button igxButton="contained" type="button" igxRipple class="button">
+        <igx-icon class="icon_1">
           add
         </igx-icon>
         <span>Port</span>
@@ -71,21 +71,25 @@
         <igx-select-item value="Option">
           Option
         </igx-select-item>
+        <label igxLabel>Label/Placeholder</label>
       </igx-select>
       <igx-select type="box" placeholder="Type" class="user-input">
         <igx-select-item value="Option">
           Option
         </igx-select-item>
+        <label igxLabel>Label/Placeholder</label>
       </igx-select>
       <igx-select type="box" placeholder="Supplier Pay terms" class="user-input">
         <igx-select-item value="Option">
           Option
         </igx-select-item>
+        <label igxLabel>Label/Placeholder</label>
       </igx-select>
       <igx-select type="box" placeholder="Port" class="user-input">
         <igx-select-item value="Option">
           Option
         </igx-select-item>
+        <label igxLabel>Label/Placeholder</label>
       </igx-select>
       <igx-date-picker type="box" mode="dialog" class="user-input">
         <label igxLabel>ETA</label>
@@ -106,8 +110,8 @@
         </h5>
       </div>
       <div class="row-layout group_6">
-        <button igxButton="raised" igxRipple class="button">
-          <igx-icon>
+        <button igxButton="contained" type="button" igxRipple class="button">
+          <igx-icon class="icon_1">
             add
           </igx-icon>
           <span>Product</span>
@@ -119,27 +123,28 @@
         <igx-select-item value="Option">
           Option
         </igx-select-item>
+        <label igxLabel>Label/Placeholder</label>
       </igx-select>
       <igx-input-group type="border" class="user-input_1">
-        <input type="text" placeholder="Specification" igxInput />
+        <input type="text" [(ngModel)]="value9" placeholder="Specification" igxInput />
       </igx-input-group>
       <igx-input-group type="border" class="user-input_1">
-        <input type="text" placeholder="Min. Qty" igxInput />
+        <input type="text" [(ngModel)]="value10" placeholder="Min. Qty" igxInput />
       </igx-input-group>
       <igx-input-group type="border" class="user-input_1">
-        <input type="text" placeholder="Max Qty" igxInput />
+        <input type="text" [(ngModel)]="value11" placeholder="Max Qty" igxInput />
       </igx-input-group>
       <igx-input-group type="border" class="user-input_1">
-        <input type="text" placeholder="Est. Sell Price" igxInput />
+        <input type="text" [(ngModel)]="value12" placeholder="Est. Sell Price" igxInput />
       </igx-input-group>
       <igx-input-group type="border" class="user-input_1">
-        <input type="text" placeholder="Unit" igxInput />
+        <input type="text" [(ngModel)]="value13" placeholder="Unit" igxInput />
       </igx-input-group>
       <igx-input-group type="border" class="user-input_1">
-        <input type="text" placeholder="Ccy" igxInput />
+        <input type="text" [(ngModel)]="value14" placeholder="Ccy" igxInput />
       </igx-input-group>
       <igx-input-group type="border" class="user-input_1">
-        <input type="text" placeholder="UOM" igxInput />
+        <input type="text" [(ngModel)]="value15" placeholder="UOM" igxInput />
       </igx-input-group>
     </div>
   </div>

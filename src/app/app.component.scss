@@ -13,6 +13,7 @@
 .default-navigation-drawer {
   min-width: min-content;
   min-height: 0;
+  max-width: 320px;
   flex-shrink: 0;
 }
 .view-container {
@@ -20,7 +21,14 @@
   position: relative;
   flex-grow: 1;
 }
+.navbar-content {
+  gap: 1rem;
+}
+.h6 {
+  margin: 0;
+}
 .icon {
+  --size: 24px;
   font-size: 24px;
   width: 24px;
   height: 24px;
