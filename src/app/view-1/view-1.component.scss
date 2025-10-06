@@ -158,6 +158,7 @@
   min-height: 50px;
 }
 .icon {
+  --size: 24px;
   font-size: 24px;
   width: 24px;
   height: 24px;
@@ -165,6 +166,9 @@
 .h5 {
   height: max-content;
   min-width: min-content;
+}
+.icon_1 {
+  color: var(--ig-surface-500);
 }
 .input {
   height: max-content;
@@ -178,10 +182,10 @@
   height: max-content;
 }
 .button {
-  color: hsla(var(--igx-surface-500));
-  background-color: hsla(var(--igx-primary-900));
+  --igx-button-foreground: var(--ig-surface-500);
+  --igx-button-background: var(--ig-primary-900);
+  --ig-size: var(--ig-size-medium);
   height: max-content;
-  min-width: min-content;
   flex-shrink: 0;
 }
 .user-input {

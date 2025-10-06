@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { View3Component } from './view3.component';
+import { View3Component } from './view-3.component';
 
 describe('View3Component', () => {
   let component: View3Component;
@@ -8,12 +8,10 @@ describe('View3Component', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ View3Component ]
+      imports: [View3Component]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(View3Component);
     component = fixture.componentInstance;
     fixture.detectChanges();

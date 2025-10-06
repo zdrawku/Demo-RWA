@@ -1,8 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
-import { View2Component } from './view2.component';
+import { IgxIconComponent, IGX_INPUT_GROUP_DIRECTIVES, IgxCheckboxComponent } from '@infragistics/igniteui-angular';
+import { View2Component } from './view-2.component';
 
 describe('View2Component', () => {
   let component: View2Component;
@@ -10,13 +11,10 @@ describe('View2Component', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ View2Component ],
-      imports: [ NoopAnimationsModule, FormsModule ]
+      imports: [View2Component, NoopAnimationsModule, FormsModule, ReactiveFormsModule, IgxIconComponent, IGX_INPUT_GROUP_DIRECTIVES, IgxCheckboxComponent]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(View2Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
